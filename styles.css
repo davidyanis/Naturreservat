@@ -1,4 +1,42 @@
 body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(179, 189, 68);
+}
+
+select {
+    font-size: 1.2em;
+}
+
+button {
+    font-size: 1.4em;
+    padding: 0.5em;
+    background-color: rgb(28, 17, 8);
+    border: none;
+    cursor: pointer;
+    margin-top: 1em;
+    border-radius: 0.4em;
+    color: #fff;
+}
+
+img {
+    height: 20em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 0.2em;
+    font-size: 1.4em;
+}
+
+label {
+    margin-top: 1em;
 }
