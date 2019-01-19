@@ -1,14 +1,30 @@
 <?php
-    include "./animals.php";
+    include "./class.php";
 
     $apa = $_POST["apa"];
-    $giraffe = $_POST["giraffe"];
     $tiger = $_POST["tiger"];
-    $kokos= $_POST["kokosnuts"];
+    $giraffe = $_POST["giraffe"];
+    $coconut = $_POST["coconut"];
 
-    if ($_POST["submit"]) {
-        echo "<h1> Hur många $namn har " . $apa . "</h1>";
-        echo "<h1>$amount</h1>";
+
+    for ($i = 0; $i < $apa; $i++) {
+        $animal1 = new Apor("Apa");
+        echo $animal1->getImage() . "<br>" . $animal1->makeSound();
     }
+    for ($i = 0; $i < $tiger; $i++) {
+        $animal1 = new Tiger("Tiger");
+        echo $animal1->getImage() . "<br>" . $animal1->makeSound();
+    }
+    for ($i = 0; $i < $giraffe; $i++) {
+        $animal1 = new Giraffe("Giraffe");
+        echo $animal1->getImage() . "<br>" . $animal1->makeSound();
+    }
+    for ($i = 0; $i < $coconut; $i++) {
+        $animal1 = new Coconut("Coconut");
+        echo $animal1->getImage() . "<br>" . $animal1->makeSound();
+    }
+
+   
+       
     
 ?>
